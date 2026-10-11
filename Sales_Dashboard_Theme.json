@@ -1,0 +1,26 @@
+{
+  "name": "Navy Blue Sales Theme",
+  "dataColors": ["#0B2A5B", "#1F5FBF", "#6FA8E8", "#A9CCF2", "#3E7FD6", "#EAF2FC"],
+  "background": "#FFFFFF",
+  "foreground": "#0B2A5B",
+  "tableAccent": "#1F5FBF",
+  "good": "#1F5FBF",
+  "neutral": "#6FA8E8",
+  "bad": "#0B2A5B",
+  "maximum": "#0B2A5B",
+  "center": "#6FA8E8",
+  "minimum": "#EAF2FC",
+  "textClasses": {
+    "callout": {"fontSize": 28, "fontFace": "Segoe UI Semibold", "color": "#0B2A5B"},
+    "title": {"fontSize": 14, "fontFace": "Segoe UI Semibold", "color": "#0B2A5B"},
+    "header": {"fontSize": 12, "fontFace": "Segoe UI Semibold", "color": "#0B2A5B"},
+    "label": {"fontSize": 11, "fontFace": "Segoe UI", "color": "#5A6B87"}
+  },
+  "visualStyles": {
+    "*": {"*": {
+      "title": [{"show": true, "fontColor": {"solid": {"color": "#0B2A5B"}}}],
+      "background": [{"show": true, "color": {"solid": {"color": "#FFFFFF"}}, "transparency": 0}],
+      "border": [{"show": true, "color": {"solid": {"color": "#D5E2F5"}}, "radius": 6}]
+    }}
+  }
+}

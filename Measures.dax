@@ -1,0 +1,21 @@
+// All measures use the real column names from the 'Sales Data' table.
+// Create each one: right-click 'Sales Data' > New measure.
+
+Total Sales = SUM ( 'Sales Data'[Sales] )
+
+Total Profit = SUM ( 'Sales Data'[Profit] )
+
+Total Orders = DISTINCTCOUNT ( 'Sales Data'[Order ID] )
+
+Total Quantity Sold = SUM ( 'Sales Data'[Quantity] )
+
+Average Order Value = DIVIDE ( [Total Sales], [Total Orders] )
+
+Profit Margin % = DIVIDE ( [Total Profit], [Total Sales] )
+
+// Optional: month label for the summary table, sorts correctly with 'Year-Month'
+Month Label = SELECTEDVALUE ( 'Sales Data'[Month Name] ) & " " & SELECTEDVALUE ( 'Sales Data'[Year] )
+
+// ---- Expected results with NO filters (see Validation_Report.md) ----
+// Total Sales 6,790,714.01 | Total Profit 1,056,582.60 | Total Orders 100
+// Total Quantity Sold 449 | Average Order Value 67,907.14 | Profit Margin % 15.56%
